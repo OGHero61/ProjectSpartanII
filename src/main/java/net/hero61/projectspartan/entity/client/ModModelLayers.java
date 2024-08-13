@@ -13,6 +13,6 @@ public class ModModelLayers {
             new ResourceLocation(ProjectSpartan.MOD_ID, "buccaneer_entity"), "main");
     public static final ModelLayerLocation SPARTAN_OCEANIC_LAYER = new ModelLayerLocation(
             new ResourceLocation(ProjectSpartan.MOD_ID, "oceanic_entity"),"main");
-    /*public static final ModelLayerLocation CUSTOM_ARMOR_STAND_LAYER = new ModelLayerLocation(
-            new ResourceLocation(ProjectSpartan.MOD_ID, "custom_armor_stand"),"main");*/
+    public static final ModelLayerLocation CUSTOM_ARMOR_STAND_LAYER = new ModelLayerLocation(
+            new ResourceLocation(ProjectSpartan.MOD_ID, "custom_armor_stand"),"main");
 }

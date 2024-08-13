@@ -17,7 +17,7 @@ public class ModEventBusEvents {
         event.put(ProjectSpartanEntities.ACHILLES_ENTITY.get(), AchillesEntity.createAttributes().build());
         event.put(ProjectSpartanEntities.BUCCANEER_ENTITY.get(), BuccaneerEntity.createAttributes().build());
         event.put(ProjectSpartanEntities.OCEANIN_ENTITY.get(), OceanicEntity.createAttributes().build());
-       // event.put(ProjectSpartanEntities.CUSTOM_ARMOR_STAND.get(), CustomArmorStand.createAttributes().build());
+        event.put(ProjectSpartanEntities.CUSTOM_ARMOR_STAND.get(), CustomArmorStand.createAttributes().build());
     }
 }
 

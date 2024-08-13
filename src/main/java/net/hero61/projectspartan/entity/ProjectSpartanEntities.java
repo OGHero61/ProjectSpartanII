@@ -44,10 +44,10 @@ public class ProjectSpartanEntities {
                             .sized(0.6f, 1.8f)  // specify size: width and height
                             .build("oceanic_entity"));
 
-   /* public static final RegistryObject<EntityType<CustomArmorStand>> CUSTOM_ARMOR_STAND = ENTITY_TYPES.register("custom_armor_stand",
+    public static final RegistryObject<EntityType<CustomArmorStand>> CUSTOM_ARMOR_STAND = ENTITY_TYPES.register("custom_armor_stand",
             () -> EntityType.Builder.<CustomArmorStand>of(CustomArmorStand::new, MobCategory.MISC)
                     .sized(0.5F, 1.975F) // Size of the armor stand
-                    .build(new ResourceLocation("mcspartan", "custom_armor_stand").toString()));*/
+                    .build(new ResourceLocation("mcspartan", "custom_armor_stand").toString()));
 
 
 

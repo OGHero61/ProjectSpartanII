@@ -16,6 +16,6 @@ public class ModEventBusClientEvents {
         event.registerLayerDefinition(ModModelLayers.SPARTAN_ACHILLES_LAYER, AchillesEntityModel::createLayer);
         event.registerLayerDefinition(ModModelLayers.SPARTAN_BUCCANEER_LAYER, BuccaneerEntityModel::createLayer);
         event.registerLayerDefinition(ModModelLayers.SPARTAN_OCEANIC_LAYER, OceanicEntityModel::createLayer);
-        //event.registerLayerDefinition(ModModelLayers.CUSTOM_ARMOR_STAND_LAYER, ModelCustomStand::createLayer);
+        event.registerLayerDefinition(ModModelLayers.CUSTOM_ARMOR_STAND_LAYER, ModelCustomStand::createLayer);
     }
 }
