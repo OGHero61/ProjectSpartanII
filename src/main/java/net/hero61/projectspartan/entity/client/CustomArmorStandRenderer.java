@@ -23,9 +23,9 @@ public class CustomArmorStandRenderer extends LivingEntityRenderer<CustomArmorSt
     public CustomArmorStandRenderer(EntityRendererProvider.Context context) {
         super(context, new ModelCustomStand(context.bakeLayer(ModModelLayers.CUSTOM_ARMOR_STAND_LAYER)), 0.0F);
         //this.addLayer(new HumanoidArmorLayer<>(this, new ModModelLayers(context.bakeLayer(ModModelLayers.CUSTOM_ARMOR_STAND_LAYER)), new ModelCustomStand(context.bakeLayer(ModModelLayers.CUSTOM_ARMOR_STAND_LAYER)), context.getModelManager()));
-        this.addLayer(new ItemInHandLayer<>(this, context.getItemInHandRenderer()));
-        this.addLayer(new ElytraLayer<>(this, context.getModelSet()));
-        this.addLayer(new CustomHeadLayer<>(this, context.getModelSet(), context.getItemInHandRenderer()));
+        //this.addLayer(new ItemInHandLayer<>(this, context.getItemInHandRenderer()));
+        //this.addLayer(new ElytraLayer<>(this, context.getModelSet()));
+        //this.addLayer(new CustomHeadLayer<>(this, context.getModelSet(), context.getItemInHandRenderer()));
     }
 
     @Override
@@ -52,15 +52,16 @@ public class CustomArmorStandRenderer extends LivingEntityRenderer<CustomArmorSt
         return d0 >= (double)(f * f) ? false : pEntity.isCustomNameVisible();
     }
 
-    @Nullable
     @Override
-    protected RenderType getRenderType(CustomArmorStand pLivingEntity, boolean pBodyVisible, boolean pTranslucent, boolean pGlowing) {
-        ResourceLocation resourcelocation = this.getTextureLocation(pLivingEntity);
-        if (pTranslucent) {
-            return RenderType.entityTranslucent(resourcelocation);
+    protected RenderType getRenderType(CustomArmorStand entity, boolean isBodyVisible, boolean isTranslucent, boolean isGlowing) {
+        ResourceLocation texture = getTextureLocation(entity);
+        if (isTranslucent) {
+            return RenderType.entityTranslucentCull(texture);
         } else {
-            return pBodyVisible ? RenderType.entityCutoutNoCull(resourcelocation) : null;
+            return isBodyVisible ? RenderType.entityCutoutNoCull(texture) : null;
         }
     }
 
+
 }
+
