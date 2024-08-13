@@ -1,0 +1,35 @@
+{
+  "item.mcspartan.buccaneer_body":"Buccaneer Armor",
+  "item.mcspartan.buccaneer_green_body":"Buccaneer Armor(Green)",
+  "item.mcspartan.buccaneer_helmet":"Buccaneer Helmet",
+  "item.mcspartan.buccaneer_green_helmet":"Buccaneer Helmet (Green)",
+  "item.mcspartan.airassault_helmet":"Air Assault Helmet",
+  "item.mcspartan.airassault_body":"Air Assault Armor",
+  "item.mcspartan.oceanic_helmet":"Oceanic Helmet",
+  "item.mcspartan.oceanic_body":"Oceanic Armor",
+  "item.mcspartan.achilles_helmet":"Achilles Helmet",
+  "item.mcspartan.achilles_body":"Achilles Armor",
+  "item.mcspartan.argonaut_helmet":"Argonaut Helmet",
+  "item.mcspartan.argonaut_body":"Argonaut Armor",
+  "item.mcspartan.mkvi_g1_helmet":"MKVI Helmet (GEN 1)",
+  "item.mcspartan.mkvi_g1_body":"MKVI Armor (GEN 1)",
+  "item.mcspartan.mkv_g1_helmet":"MKV Helmet (GEN 1)",
+  "item.mcspartan.mkv_g1_body":"MKV Armor (GEN 1)",
+  "item.mcspartan.odst_g1_helmet": "ODST Helmet (GEN 1)",
+  "item.mcspartan.odst_g1_body": "ODST Armor (GEN 1)",
+  "item.mcspartan.argus_helmet": "Argus Helmet",
+  "item.mcspartan.argus_body": "Argus Armor",
+  "item.mcspartan.atlas_helmet": "Atlas Helmet",
+  "item.mcspartan.atlas_body": "Atlas Armor",
+
+
+  "item.mcspartan.custom_spawn_egg":"Spartan Ally",
+
+  "entity.mcspartan.airassault_entity": "Spartan ALLY",
+  "entity.mcspartan.achilles_entity": "Spartan ALLY",
+  "entity.mcspartan.buccaneer_entity": "Spartan ALLY",
+  "entity.mcspartan.oceanic_entity": "Spartan ALLY",
+
+
+  "creativetab.mjolnir_armor_tab": "Mjolnir Armor"
+}
