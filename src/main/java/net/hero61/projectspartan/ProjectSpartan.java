@@ -1,16 +1,19 @@
 package net.hero61.projectspartan;
 
 import com.mojang.logging.LogUtils;
+import cpw.mods.modlauncher.api.IEnvironment;
 import net.hero61.projectspartan.client.CustomHUDOverlay;
+import net.hero61.projectspartan.client.Keybindings;
 import net.hero61.projectspartan.client.PlayerRenderHandler;
+import net.hero61.projectspartan.client.handler.ClientForgeHandler;
 import net.hero61.projectspartan.entity.ProjectSpartanEntities;
 import net.hero61.projectspartan.entity.client.*;
-import net.hero61.projectspartan.entity.custom.CustomArmorStand;
 import net.hero61.projectspartan.item.ProjectSpartanItems;
 import net.hero61.projectspartan.item.SpartanTabs;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -77,7 +80,13 @@ public class ProjectSpartan {
             EntityRenderers.register(ProjectSpartanEntities.ACHILLES_ENTITY.get(), AchillesEntityRenderer::new);
             EntityRenderers.register(ProjectSpartanEntities.BUCCANEER_ENTITY.get(), BuccaneerEntityRenderer::new);
             EntityRenderers.register(ProjectSpartanEntities.OCEANIN_ENTITY.get(), OceanicEntityRenderer::new);
+
             EntityRenderers.register(ProjectSpartanEntities.CUSTOM_ARMOR_STAND.get(), CustomArmorStandRenderer::new);
+        }
+        @SubscribeEvent
+        public  static void registerKeys(RegisterKeyMappingsEvent event){
+            event.register(Keybindings.INSTANCE.selectorKey);
+
         }
     }
 }
